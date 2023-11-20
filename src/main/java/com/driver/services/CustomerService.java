@@ -12,12 +12,12 @@ public interface CustomerService {
 
 	public void register(Customer customer);
 
-	public void deleteCustomer(Integer customerId);
+	public void deleteCustomer(Integer customerId) throws Exception;
 	
 	public TripBooking bookTrip(int customerId, String fromLocation, String toLocation, int distanceInKm) throws Exception;
 	
-	public void cancelTrip(Integer tripId);
+	public void cancelTrip(Integer tripId) throws Exception;
 
-	public void completeTrip(Integer tripId);
+	public void completeTrip(Integer tripId) throws Exception;
 	
 }
